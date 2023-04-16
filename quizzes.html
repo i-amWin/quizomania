@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://kit.fontawesome.com/1b0f8dcc4a.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js" defer></script>
+
+    <title>QUIZOMANIA</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <a href="/" class="logo">QUIZOMANIA</a>
+
+        <nav class="navbar">
+          <ul class="navbar__items">
+            <li class="navbar__item">
+              <a class="navbar__item-links" href="/">Home</a>
+            </li>
+
+            <li class="navbar__item">
+              <a class="navbar__item-links" href="#">About</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1 class="title quiz__title">Quizzes</h1>
+        <p class="subtitle quiz__subtitle">
+          Always think twice before choosing any answer
+        </p>
+
+        <ol id="quiz-container" class="quizzes"></ol>
+      </div>
+    </main>
+
+    <template id="quiz-template">
+      <li class="quiz">
+        <h3 class="quiz__question"></h3>
+
+        <ol class="quiz__answers">
+          <li class="quiz__answer">
+            <button class="quiz__answer__btn"></button>
+            <span><i class="fa-solid fa-xmark"></i></span>
+          </li>
+          <li class="quiz__answer">
+            <button class="quiz__answer__btn"></button>
+            <span><i class="fa-solid fa-xmark"></i></span>
+          </li>
+          <li class="quiz__answer">
+            <button class="quiz__answer__btn"></button>
+            <span><i class="fa-solid fa-xmark"></i></span>
+          </li>
+          <li class="quiz__answer">
+            <button class="quiz__answer__btn"></button>
+            <span><i class="fa-solid fa-xmark"></i></span>
+          </li>
+          <li class="quiz__answer">
+            <button class="quiz__answer__btn"></button>
+            <span><i class="fa-solid fa-xmark"></i></span>
+          </li>
+          <li class="quiz__answer">
+            <button class="quiz__answer__btn"></button>
+            <span><i class="fa-solid fa-xmark"></i></span>
+          </li>
+        </ol>
+
+        <p class="correct-answer">
+          <strong>Correct Answer : </strong><span></span>
+        </p>
+      </li>
+    </template>
+  </body>
+</html>
